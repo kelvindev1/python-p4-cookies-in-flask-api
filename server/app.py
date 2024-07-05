@@ -26,5 +26,23 @@ def show_session(key):
     return response
 
 if __name__ == '__main__':
-    app.run(port=5555)
+    app.run(port=5555, debug=True)
+
+
+# after making a request in the browser we an see something like;
+# -{
+#   "cookies": [
+#     {
+#       "mouse": "Cookie"
+#     },
+#     {
+#       "session": "eyJnb29kbmlnaHQiOiJNb29uIiwiaGVsbG8iOiJXb3JsZCJ9.Y3KXKQ.oTqGI6rmhKDNLizZaHfJadRybUc"
+#     }
+#   ],
+#   "session": {
+#     "session_accessed": true,
+#     "session_key": "hello",
+#     "session_value": "World"
+#   }
+# }
     
